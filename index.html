@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFuture Summit</title>
@@ -46,7 +49,7 @@
     <form action="https://api.sheetmonkey.io/form/aphgbmUnJtxgzsxwmQ5nQo" method="post">
     <fieldset><h1 class="h1">Inscrição</h1></fieldset>
     <fieldset>
-        <legend>Dados Pessoais:</legend>
+        <h2>Dados Pessoais:</h2>
     </fieldset>
     <div class="forms-i">
         <div>
@@ -57,41 +60,42 @@
              <label for="email">E-mail:</label>
              <input type="email" name="email" id="email" placeholder="Digite seu e-mail:">
 
-             <button type="submit">Enviar</button>
+             
         </div>
     </div>
+    <br>
 
-    <fieldset><legend>Escolha o tipo de ingresso</legend></fieldset>
-    <div class="forms-i">
+    <fieldset><h2>Escolha o tipo de ingresso</h2></fieldset>
+    <div class="radio-wrapper">
         <div>
-            <input type="radio" name="ingresso" id="presencial" value="Presencial">
-            <label for="presencial">Presencial</label>
-
-            <input type="radio" name="ingresso" id="online" value="Online">
-            <label for="online">Online</label>
-
-            <button type="submit">Enviar</button>
+            <label for="presencial"><input type="radio" name="ingresso" id="presencial" value="presencial"> Presencial</label>
+            <p>Interação direta com palestrantes e participantes, criando oportunidades de networking. Ambiente imersivo, com dinâmicas ao vivo, workshops práticos e experiências interativas. Acesso exclusivo a espaços físicos, como stands de empresas e áreas de inovação.</p>
         </div>
     </div>
 
-    <fieldset><legend>Aceitação de Termos</legend></fieldset>
-    <div class="forms-i">
+    <div class="radio-wrapper">
+        <div>
+            <label for="online"><input type="radio" name="ingresso" id="online" value="online"> Online</label>
+            <p>Conveniência, permitindo assistir de qualquer lugar, sem deslocamento. Flexibilidade, podendo pausar e revisar conteúdos gravados após o evento. Custo reduzido, sem gastos com transporte e hospedagem.</p>
+        </div>
+    </div>
+    <br><br>
+
+    <fieldset><h2>Aceitação de Termos</h2></fieldset>
+    <div class="checkbox-wrapper">
         <div>
             <p>Ao enviar esse formulário, você concorda com os seguintes termos: 
                 <ol type="1">
-                    <li>Seus dados podem ser coletados para melhorar sua experiência e oferecer conteúdos personalizados.</li>
-                    <li>Você é responsável por qualquer informação fornecida no site, garantindo que seja verdadeira e precisa. O uso do site deve respeitar as leis vigentes e boas práticas online.</li>
+                    <li>Seus dados podem ser coletados para melhorar sua experiência e oferecer conteúdos personalizados.</li> <br>
+                    <li>Você é responsável por qualquer informação fornecida no site, garantindo que seja verdadeira e precisa. O uso do site deve respeitar as leis vigentes e boas práticas online.</li> <br>
                     <li>Podemos atualizar nossos termos periodicamente, e a continuidade do uso indica sua aceitação das mudanças.</li>
                 </ol>
             </p>
 
-            <input type="checkbox" name="termo" id="sim" value="Aceita">
-            <label for="sim">Sim</label>
+            <label for="terms"><input type="checkbox" name="terms" id="terms" value="terms" checked> Concordo com os <a href="#">termos e condições</a></label>
 
-            <input type="checkbox" name="termo" id="não" value="Rejeita">
-            <label for="não">Não</label>
-
-            <button type="submit">Confirmar</button>
+            <button type="submit">Enviar</button>
+            <small>O evento será gratuito!</small>
         </div>
     </div>
     </form>
